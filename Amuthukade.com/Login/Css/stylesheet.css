@@ -1,0 +1,268 @@
+.body{
+    margin-bottom: 6rem;
+    margin-top: 1.5rem;
+}
+
+.container{
+
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 81.25rem;
+        padding-top: 0px;
+        padding-bottom: 1.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        position: relative;
+        width: 100%;
+        
+
+}
+*,:after,:before {
+    box-sizing: border-box;
+}
+.flexbox-container{
+    display: flex;
+    position: center;
+}
+.page-heading {
+    margin: 0 0 3rem;
+    text-align: center;
+}
+
+div{
+    display: block;
+    
+}
+
+.login{
+    margin-top: 10rem;
+    margin-right: auto;
+    margin-bottom: 6rem;
+    margin-left: auto;
+    max-width: 56.25rem;
+    color: #4a4a4a;   
+}
+h1{
+    font-size: 42px;
+}
+.login-row {
+    margin: 0 auto;
+    max-width: 75.25rem;
+    width: 100%;
+    border: 1px solid #e2e2e2;
+    border-top-color: rgb(226, 226, 226);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(226, 226, 226);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(226, 226, 226);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(226, 226, 226);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    display: flex;
+}
+.login-form{
+    width: 100%;
+    
+    
+}
+.new-customer {
+    width: 100%;
+}
+.login-form, .new-customer, .new-customer-fact{
+    padding-left: .75rem;
+}
+.login-form, .new-customer{
+    padding-right: .75rem;
+    float: left;
+}
+.form-label {
+    color: #666;
+    cursor: pointer;
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: .5rem;
+    -webkit-font-smoothing: antialiased;
+    font-family: Merriweather,Arial,Helvetica,sans-serif;
+}
+.form-field {
+    display: block;
+    margin: 0 0 2rem;
+    max-width: none;
+}
+.form-actions {
+    background: 0 0;
+    border: 0;
+}
+.form-actions {
+    margin: 0 auto;
+    max-width: 75.25rem;
+    width: 100%;
+    display: block;
+}
+.form-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    color: #666;
+    display: block;
+    font-family: inherit;
+    font-size: 1rem;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: Merriweather,Arial,Helvetica,sans-serif;
+    height: 3rem;
+    margin: 0;
+    padding: .75rem 1rem;
+    transition: border-color .1s ease-out;
+    width: 100%;
+}
+input{
+    line-height: normal;
+}
+
+.form-field--error .newsletter .hbspt-form .hs-form-field .input .hs-input, .form-field--success .form-input, .form-field--success .newsletter .hbspt-form .hs-form-field .input .hs-input, .form-field--warning .form-input, .form-field--warning .newsletter .hbspt-form .hs-form-field .input .hs-input, .newsletter .hbspt-form .hs-form-field .input .form-field--error .hs-input, .newsletter .hbspt-form .hs-form-field .input .form-field--success .hs-input, .newsletter .hbspt-form .hs-form-field .input .form-field--warning .hs-input {
+    float: left;
+}
+.form-field--error .form-checkbox+.form-label::before, .form-field--error .form-input, .form-field--error .form-prefixPostfix-label, .form-field--error .form-radio+.form-label::before, .form-field--error .form-select, .form-field--error .newsletter .hbspt-form .hs-form-field .input .hs-input, .newsletter .hbspt-form .hs-form-field .input .form-field--error .hs-input {
+    border-color: #cc4749;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+.button, .newsletter .hbspt-form .actions .hs-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    font-weight: 400;
+    margin: 0 0 1rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: transparent;
+    border-color: #ccc;
+    color: #666;
+    font-size: 1rem;
+    padding: .875rem 2.25rem;
+    border-radius: 4px;
+    outline: 0;
+    vertical-align: middle;
+}
+.button--primary, .newsletter .hbspt-form .actions .hs-button {
+    background-color: #5e2e91;
+    border-color: #5e2e91;
+    color: #fefefe;
+}
+.button, .newsletter .hbspt-form .actions .hs-button {
+    line-height: 1rem;
+    transition: all .15s ease;
+}
+.form-actions .button, .form-actions .newsletter .hbspt-form .actions .hs-button, .form-actions a, .form-actions input, .newsletter .hbspt-form .actions .form-actions .hs-button {
+    vertical-align: top;
+    width: 100%;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+.button--primary, .newsletter .hbspt-form .actions .hs-button {
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.button--primary{
+    padding: 14px, 36px;
+}
+
+.form-field {
+    display: block;
+    margin-bottom: 2rem;
+    max-width: none;
+}
+.forgot-password{
+    margin-top: .75rem;
+    vertical-align: top;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-family: Merriweather,Arial,Helvetica,sans-serif;
+}
+.body a {
+    text-decoration: none;
+}
+a {
+    transition: color .15s ease;
+    color: #5e2d91;
+    background-color: transparent;
+    line-height: inherit;
+    text-decoration: underline;
+}
+.panel{
+    position: relative;
+}
+.panel-header {
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 1.5rem 2rem 0;
+}
+.panel-title {
+    line-height: 1.5;
+    margin: 0;
+    font-size: 20px;
+}
+.panel-body {
+    margin-bottom: 1.5rem;
+    padding: 1rem 2rem 1.5rem;
+    background: #f7f7f7;
+    -webkit-font-smoothing: antialiased;
+    font-family: Merriweather,Arial,Helvetica,sans-serif;
+}
+.panel-body>:first-child {
+    margin-top: 0;
+}
+.new-customer-intro {
+    margin-bottom: 0;
+}
+.new-customer-fact-list {
+    margin-left: 3rem;
+}
+ul{
+    margin-left: 1.15rem;
+    margin-bottom: 1.5rem;
+    list-style-position: outside;
+}
+
+.flexbox-container:after, .flexbox-container:before {
+    content: " ";
+    display: table;
+}
+.form-field:after, .form-field:before {
+    content: " ";
+    display: table;
+}
+.form-actions:after, .form-actions:before {
+    content: " ";
+    display: table;
+}
