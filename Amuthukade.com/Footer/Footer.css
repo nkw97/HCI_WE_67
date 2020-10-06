@@ -1,0 +1,134 @@
+footer{
+    background: black;
+    padding: 8px;
+    color: #eeeeee;
+    display: flex;
+    font-family: 'Roboto Condenser', sans-serif;
+}
+
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: tomato;
+}
+
+footer a:link{
+    text-decoration: none;
+}
+
+footer #left-footer{
+    flex: 1;
+    border-right: 3px solid tomato;
+    padding-left: 32px;
+}
+
+footer #left-footer {
+    padding: 0;
+    list-style: none;
+    line-height: 1.5;
+}
+
+footer #right-footer{
+    flex: 2;
+    padding: 8px;
+    text-align: center;
+}
+
+footer #social-media-footer a.fa-whatsapp{
+    color: white;
+    transition: 0.4s;
+    block-size: auto;
+}
+
+footer #social-media-footer {
+    display:flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+footer #social-media-footer {
+    font-size: 48px;
+    padding: 16px;
+    transition: 0.4s;
+}
+
+footer #social-media-footer:hover a .fa-whatsapp{
+    color: green;
+}
+
+
+@media(max-width: 719px){
+    main{
+        width: 95%;
+    }
+
+    section{
+        flex-direction: column;
+    }
+
+    .card,
+    .card .card-image img{
+        width: 100%;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer #left-footer{
+        flex: 1;
+        border-right: 0;
+        padding-left: 0;
+    }
+
+    footer #right-footer{
+        background: #eeeeee;
+        color: rgba(0, 0, 0, 0.4);
+    }
+
+    footer #right-footer a{
+        color: black;
+    }  
+
+    footer #social-media-footer a .fa-whatsapp{
+        color: black;
+        transition: 0.4s;
+    }
+}
+.search-container button {
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: lightseagreen;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: sans-serif;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background: coral;
+  }
+  
+  media(min-width:720px){
+    main{
+        width: 95%;
+    }
+    .card{
+        width: 45%;
+    }
+    .card .card-image img{
+        width: 50%;
+    }
+}
+ 
+@media (min-width: 1200px){
+    main{
+    width: 85%;
+    }
+}
