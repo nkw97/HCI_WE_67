@@ -167,9 +167,9 @@ button, input, optgroup, select, textarea {
     outline: 0;
     vertical-align: middle;
 }
-.button--primary, .newsletter .hbspt-form .actions .hs-button {
-    background-color: #5e2e91;
-    border-color: #5e2e91;
+.button--primary,  .hbspt-form .actions .hs-button {
+    background-color: #007bff;
+    border-color: #007bff;
     color: #fefefe;
 }
 .button, .newsletter .hbspt-form .actions .hs-button {
@@ -202,19 +202,13 @@ button, input, optgroup, select, textarea {
     margin-bottom: 2rem;
     max-width: none;
 }
-.forgot-password{
-    margin-top: .75rem;
-    vertical-align: top;
-    width: 100%;
-    -webkit-font-smoothing: antialiased;
-    font-family: Merriweather,Arial,Helvetica,sans-serif;
-}
+
 .body a {
     text-decoration: none;
 }
 a {
     transition: color .15s ease;
-    color: #5e2d91;
+    color: #007bff;
     background-color: transparent;
     line-height: inherit;
     text-decoration: underline;
