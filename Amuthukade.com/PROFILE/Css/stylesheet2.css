@@ -1,0 +1,25 @@
+
+.page-heading{
+    margin-top: 10rem;
+    padding-left: 30px;
+}
+
+.container-fluid{
+    margin-top: 2.5rem;
+    padding-left: 30px
+
+}
+* {
+    box-sizing: border-box;
+  }
+  .col-sm-6{
+    margin-left: 180px;
+    margin-top: 20px;
+  }
+  
+  .blog-card{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+ 
