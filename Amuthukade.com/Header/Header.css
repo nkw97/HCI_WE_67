@@ -110,7 +110,7 @@
 
 nav{
     padding-top: 400px;
-    margin-top: 40px;
+    margin-top: 25px;
     height: 100px;
     background-color: black;
     width: 100%;
@@ -121,7 +121,7 @@ nav{
 }
 
 nav a {
-    padding: 0 32px;
+    padding: 0 3px;
     color: white;
     transition: 0.4s;
     margin-top: 30px;
@@ -143,9 +143,7 @@ nav ul{
     margin-top:30px ;
 }
 
-nav li{
-    padding: ;
-}
+
 .active{
     color: chocolate;
 }
@@ -260,7 +258,7 @@ nav li{
     text-align: center;
 }
 
-media(max-width: 900px){
+@media(max-width: 900px){
     nav ul {
         display: none;
     }
