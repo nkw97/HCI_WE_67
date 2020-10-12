@@ -34,6 +34,8 @@
     color: black;
 }
 
+
+
 .headsection{
     height: 100px;
     background-color: white;
@@ -109,7 +111,7 @@
 nav{
     padding-top: 400px;
     margin-top: 40px;
-    height: 120px;
+    height: 100px;
     background-color: black;
     width: 100%;
     font-family: 'Roboto Condensed', sans-serif;
@@ -141,6 +143,9 @@ nav ul{
     margin-top:30px ;
 }
 
+nav li{
+    padding: ;
+}
 .active{
     color: chocolate;
 }
@@ -253,4 +258,21 @@ nav ul{
 #section-source a{
     margin: 8px;
     text-align: center;
+}
+
+media(max-width: 900px){
+    nav ul {
+        display: none;
+    }
+    #menu-icon{
+        display: flex;
+    }
+
+    #slideout-menu{
+      display: block;
+    }
+
+    #searchbox {
+        display: none;
+    }
 }
