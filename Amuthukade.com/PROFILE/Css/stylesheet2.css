@@ -1,12 +1,14 @@
 
 .page-heading{
-    margin-top: 10rem;
+    margin-top: 30px;
     padding-left: 30px;
+    font-size: 50px;
 }
 
 .container-fluid{
     margin-top: 2.5rem;
-    padding-left: 30px
+    padding-left: 40px;
+    margin-left: 50px;
 
 }
 * {
@@ -21,5 +23,20 @@
     display: flex;
     flex-direction: column;
     margin: 1rem;
-  }
+ }
+ .container{
+   margin-top: 1px;
+ }
+ .fa{
+  margin-left: 150px;
+}
  
+ .input-group{
+  margin-left: 100px;
+ }
+ .form-group{
+   margin-top: 40px;
+ }
+ .details{
+   font-size: 20px;
+ }
