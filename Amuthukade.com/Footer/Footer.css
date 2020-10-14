@@ -9,6 +9,16 @@ footer{
     display: flex;
     font-family: 'Roboto Condenser', sans-serif;
 }
+.contact{
+    padding-right: 10px;
+}
+footer p{
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    
+}
 
 footer a{
     color: white;
@@ -101,6 +111,9 @@ footer #social-media-footer:hover a .fa-whatsapp{
         color: black;
         transition: 0.4s;
     }
+}
+.search-container{
+    margin-bottom: 20px;
 }
 .search-container button {
     padding: 6px;
