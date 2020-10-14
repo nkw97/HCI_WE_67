@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Catalog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/stylesheet2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+	<link rel="stylesheet" href="../New_Header/cssh/bootstrap.min.css"/>
+	<link rel="stylesheet" href="../New_Header/cssh/flaticon.css"/>
+	<link rel="stylesheet" href="../New_Header/cssh/style.css"/>
+	<!-- header styles -->
+<style>
+.col-xl-4.col-lg-5 {
+    padding-top: 5px;
+}
+</style>
+
+
+
+</head>
+
+<body>
+    <div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+<header class="header-section">
+	<div class="header-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 text-center text-lg-left">
+					<!-- logo -->
+					<a href="./index.html" class="site-logo">
+						<img src="../New_Header/himg/logo.png" alt="">
+					</a>
+				</div>
+				<div class="col-xl-6 col-lg-5">
+					<form class="header-search-form">
+						<input type="text" placeholder="Search here ....">
+						<button><i class="flaticon-search"></i></button>
+					</form>
+				</div>
+				<div class="col-xl-4 col-lg-5">
+					<div class="user-panel">
+						<div class="up-item">
+							<i class="flaticon-profile"></i>
+							<a href="../LOGIN/login.html">Sign</a> In or <a href="../CREAT_ACCOUNT/create_account.html">Create Account</a>
+						</div>
+						<div class="up-item">
+							<div class="shopping-card">
+								<i class="flaticon-bag"></i>
+								<span>0</span>
+							</div>
+							<a href="#">Shopping Cart</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav class="main-navbar">
+		<div class="container">
+			<!-- menu -->
+			<ul class="main-menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Computer & Accessories</a></li>
+				<li><a href="#">Catalog</a></li>
+				<li><a href="#">Grocery Store</a></li>
+				<li><a href="#">Fruits & Vegitables</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+</header>
+<!-- Header section end -->
+
+
+    <h1 class="page-heading">catalogue</h1>
+
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+        <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+        <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+        <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+      </div>
+      
+      <div class="container">
+        <div class="filterDiv cars">BMW</div>
+        <div class="filterDiv colors fruits">Orange</div>
+        <div class="filterDiv cars">Volvo</div>
+        <div class="filterDiv colors">Red</div>
+        <div class="filterDiv cars animals">Mustang</div>
+        <div class="filterDiv colors">Blue</div>
+        <div class="filterDiv animals">Cat</div>
+        <div class="filterDiv animals">Dog</div>
+        <div class="filterDiv fruits">Melon</div>
+        <div class="filterDiv fruits animals">Kiwi</div>
+        <div class="filterDiv fruits">Banana</div>
+        <div class="filterDiv fruits">Lemon</div>
+        <div class="filterDiv animals">Cow</div>
+      </div>
+      
+      <script>
+      filterSelection("all")
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+      
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+        }
+      }
+      
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);     
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+      
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+      </script>
+      
+
+                      
+                       
+                      
+               
+
+                                            
+                                       
+
+
+    <!--====== Javascripts & Jquery ======-->
+	<script src="../New_Header/jshead/jquery-3.2.1.min.js"></script>
+	<script src="../New_Header/jshead/bootstrap.min.js"></script>
+	<script src="../New_Header/jshead/jquery.slicknav.min.js"></script>
+	<script src="../New_Header/jshead/jquery.zoom.min.js"></script>
+	<script src="../New_Header/jshead/main.js"></script>
+</body>
+
+<footer>
+    
+</footer>
+
+</html>
