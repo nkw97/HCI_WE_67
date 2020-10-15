@@ -13,7 +13,7 @@ footer{
     padding-right: 10px;
 }
 footer p{
-    padding-top: 0px;
+    padding-top: 10px;
     margin-top: 0px;
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -64,7 +64,7 @@ footer #social-media-footer {
 
 footer #social-media-footer {
     font-size: 48px;
-    padding: 16px;
+    padding-left: 8px;
     transition: 0.4s;
 }
 
@@ -110,10 +110,16 @@ footer #social-media-footer:hover a .fa-whatsapp{
     footer #social-media-footer a .fa-whatsapp{
         color: black;
         transition: 0.4s;
+        padding-left: 10px;
     }
 }
 .search-container{
     margin-bottom: 20px;
+}
+
+.search-container{
+    margin-left: 0px;
+    margin-right: 10px;
 }
 .search-container button {
     padding: 6px;
