@@ -79,11 +79,7 @@
       width: fit-content;
     }
 
-    .cad1{
-
-      width: fit-content;
-      margin-left: 0px;
-    }
+   
    
   }
   @media only screen and (min-width: 768px) {
@@ -103,8 +99,14 @@
 
     .card{
       width: min-content;
-    }
-
-
-    
+    }    
+}
+.contact{
+  color: seashell;
+}
+.quiklink{
+  color: seashell;
+}
+.chat{
+  color: seashell;
 }
