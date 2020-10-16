@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Catalog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/stylesheet2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+	<link rel="stylesheet" href="../New_Header/cssh/bootstrap.min.css"/>
+	<link rel="stylesheet" href="../New_Header/cssh/flaticon.css"/>
+	<link rel="stylesheet" href="../New_Header/cssh/style.css"/>
+	<!-- header styles -->
+ <!--footer-->
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+ <link rel="stylesheet" href="../Footer/Footer.css">
+ <!-- end footer-->
+<style>
+.col-xl-4.col-lg-5 {
+padding-top: 5px;
+}
+div#social-media-footer {
+display: inline-block;
+padding-left: 15px;
+}
+</style>
+
+
+
+</head>
+
+<body>
+    <div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+<header class="header-section">
+	<div class="header-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 text-center text-lg-left">
+					<!-- logo -->
+					<a href="./index.html" class="site-logo">
+						<img src="../New_Header/himg/logo.png" alt="">
+					</a>
+				</div>
+				<div class="col-xl-6 col-lg-5">
+					<form class="header-search-form">
+						<input type="text" placeholder="Search here ....">
+						<button><i class="flaticon-search"></i></button>
+					</form>
+				</div>
+				<div class="col-xl-4 col-lg-5">
+					<div class="user-panel">
+						<div class="up-item">
+							<i class="flaticon-profile"></i>
+							<a href="../LOGIN/login.html">Sign</a> In or <a href="../CREAT_ACCOUNT/create_account.html">Create Account</a>
+						</div>
+						<div class="up-item">
+							<div class="shopping-card">
+								<i class="flaticon-bag"></i>
+								<span id="thisone">0</span>
+							</div>
+							<a href="#">Shopping Cart</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav class="main-navbar">
+		<div class="container">
+			<!-- menu -->
+			<ul class="main-menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="../Computer/Computer.html">Computer & Accessories</a></li>
+				<li><a href="../catalogue/catalogue.html">Catalog</a></li>
+				<li><a href="#">Grocery Store</a></li>
+				<li><a href="#">Fruits & Vegitables</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+</header>
+<!-- Header section end -->
+
+
+    <h1 class="page-heading">catalogue</h1>
+    <nav class="main-menu1">
+    <div id="myBtnContainer" class="center">
+      <li><button class="btn active" onclick="filterSelection('all')"><strong>Show all</strong> </button></li>
+        <button class="btn" onclick="filterSelection('cars')"><strong>Vegetables</strong> </button>
+        <button class="btn" onclick="filterSelection('animals')"><strong>Computer</strong> </button>
+        <button class="btn" onclick="filterSelection('fruits')"> <strong>Fruits</strong></button>
+        <button class="btn" onclick="filterSelection('colors')"> <strong>Beauty products</strong></button>
+      </div>
+    </nav>
+      <div class="container">
+        
+       
+        <div class="filterDiv fruits"  id="rcorners2">
+          <p class="price"> <strong> Mango  </strong></p>
+        <img src="../catalogue/imgs/portfolio-21.jpg" alt="Denim Jeans" style="width:50%;">
+        <p class="price">1 kg</p>
+        <p class="price">LKR 250.00</p>
+        <p><button id="rcorners1"><strong> <a href=# id="rcorners3">More details</a>  </strong> </button></p>
+        <p><button id="rcorners1"><strong><a onclick="addone()" id="rcorners3">Add to Cart</a></strong></button></p>
+
+        
+        
+        </div>
+
+        <div class="filterDiv cars" id="rcorners2">
+          <p class="price"><strong>Beet root</strong></p>
+          <img src="../catalogue/imgs/portfolio-4.jpg" alt="Denim Jeans" style="width:50%">
+          <p class="price">1kg</p>
+          <p class="price">LKR 19.99</p>
+          <p><button id="rcorners1"><strong> <a href=# id="rcorners3">More details</a>  </strong> </button></p>
+          <p><button id="rcorners1"><strong><a onclick="addone()" id="rcorners3">Add to Cart</a></strong></button></p>
+        </div>
+
+        <div class="filterDiv colors" id="rcorners2">
+          <p class="price"><strong>Body lotion</strong></p>
+          <img src="../catalogue/imgs/portfolio-666.jpg" alt="Denim Jeans" style="width:50%">
+          <p class="price">LKR 819.99</p>
+          <p><button id="rcorners1"><strong> <a href="../Beauty products/beauty.html" id="rcorners3">More details</a>  </strong> </button></p>
+          <p><button id="rcorners1"><strong><a onclick="addone()" id="rcorners3">Add to Cart</a></strong></button></p>
+        </div>
+
+        <div class="filterDiv cars " id="rcorners2">
+          <p class="price"><strong>Carrot</strong></p>
+          <img src="../catalogue/imgs/portfolio-7.jpg" alt="Denim Jeans" style="width:50%">
+          <p class="price">1kg</p>
+          <p class="price">LKR 45.99</p>
+          <p><button id="rcorners1"><strong> <a href=# id="rcorners3">More details</a>  </strong> </button></p>
+          <p><button id="rcorners1"><strong><a onclick="addone()" id="rcorners3">Add to Cart</a></strong></button></p>
+        </div>
+
+    <!--computers and accessories-->
+
+    <div class="filterDiv animals" id="rcorners2">
+      <p class="price"><strong>Acer 1234</strong></p>
+      <img src="../catalogue/imgs/portfolio-3.jpg" alt="Denim Jeans" style="width:50%">
+      
+      <p class="price">LKR 145 000.99</p>
+      <p><button id="rcorners1"><strong> <a href="../Computer/Computer.html" id="rcorners3">More details</a>  </strong> </button></p>
+      <p><button id="rcorners1"><strong><a onclick="addone()" id="rcorners3">Add to Cart</a></strong></button></p>
+    </div>
+
+ <div class="filterDiv animals" id="rcorners2">
+  <p class="price"><strong>Acer M34</strong></p>
+  <img src="../catalogue/imgs/portfolio-1.jpg" alt="Denim Jeans" style="width:50%">
+  
+  <p class="price">LKR 155 000.00</p>
+  <p><button id="rcorners1"><strong> <a href="../Computer/Computer.html" id="rcorners3">More details</a>  </strong> </button></p>
+  <p><button id="rcorners1"><strong><a onclick="addone()" id="rcorners3">Add to Cart</a></strong></button></p>
+</div>
+
+<div class="filterDiv animals" id="rcorners2">
+  <p class="price"><strong>Acer 1234</strong></p>
+  <img src="../catalogue/imgs/portfolio-33.jpg" alt="Denim Jeans" style="width:50%">
+  
+  <p class="price">LKR 145 000.99</p>
+  <p><button id="rcorners1"><strong> <a href="../Computer/Computer.html" id="rcorners3">More details</a>  </strong> </button></p>
+  <p><button id="rcorners1"><strong><a onclick="addone()" id="rcorners3">Add to Cart</a></strong></button></p>
+</div>
+
+<div class="filterDiv animals" id="rcorners2">
+  <p class="price"><strong>Acer 1234</strong></p>
+  <img src="../catalogue/imgs/portfolio-3.jpg" alt="Denim Jeans" style="width:50%">
+  
+  <p class="price">LKR 145 000.99</p>
+  <p><button id="rcorners1"><strong> <a href="../Computer/Computer.html" id="rcorners3">More details</a>  </strong> </button></p>
+  <p><button id="rcorners1"><strong><a onclick="addone()" id="rcorners3">Add to Cart</a></strong></button></p>
+</div>
+
+<div class="filterDiv animals" id="rcorners2">
+  <p class="price"><strong>Acer 1234</strong></p>
+  <img src="../catalogue/imgs/portfolio-3.jpg" alt="Denim Jeans" style="width:50%">
+  
+  <p class="price">LKR 145 000.99</p>
+  <p><button id="rcorners1"><strong> <a href="../Computer/Computer.html" id="rcorners3">More details</a>  </strong> </button></p>
+  <p><button id="rcorners1"><strong><a onclick="addone()" id="rcorners3">Add to Cart</a></strong></button></p>
+</div>
+<!--end computers and accessories-->
+<div class="filterDiv colors" id="rcorners2">
+  <p class="price"><strong>Face mask</strong></p>
+  <img src="../catalogue/imgs/portfolio-333.jpg" alt="Denim Jeans" style="width:50%">
+  
+  <p class="price">LKR 650.00</p>
+  <p><button id="rcorners1"><strong> <a href="../Beauty products/beauty.html" id="rcorners3">More details</a>  </strong> </button></p>
+  <p><button id="rcorners1"><strong><a onclick="addone()" id="rcorners3">Add to Cart</a></strong></button></p>
+</div>
+
+<div class="filterDiv colors" id="rcorners2">
+  <p class="price"><strong>Oil mask</strong></p>
+  <img src="../catalogue/imgs/portfolio-777.jpg" alt="Denim Jeans" style="width:50%">
+  
+  <p class="price">LKR 750.00</p>
+  <p><button id="rcorners1"><strong> <a href=# id="rcorners3">More details</a>  </strong> </button></p>
+  <p><button id="rcorners1"><strong><a onclick="addone()" id="rcorners3">Add to Cart</a></strong></button></p>
+</div>
+
+<div class="filterDiv colors" id="rcorners2">
+  <p class="price"><strong>Vitamin e</strong></p>
+  <img src="../catalogue/imgs/portfolio-2.jpg" alt="Denim Jeans" style="width:50%">
+  
+  <p class="price">LKR 1750.00</p>
+  <p><button id="rcorners1"><strong> <a href=# id="rcorners3">More details</a>  </strong> </button></p>
+  <p><button id="rcorners1"><strong><a onclick="addone()" id="rcorners3">Add to Cart</a></strong></button></p>
+</div>
+
+        <div class="filterDiv fruits" id="rcorners2">
+          <p class="price"><strong>Papaya</strong></p>
+          <img src="../catalogue/imgs/portfolio-22.jpg" alt="Denim Jeans" style="width:50%">
+          <p class="price">1 kg</p>
+          <p class="price">LKR 75.00</p>
+          <p><button id="rcorners1"><strong> <a href=# id="rcorners3">More details</a>  </strong> </button></p>
+          <p><button id="rcorners1"><strong><a onclick="addone()" id="rcorners3">Add to Cart</a></strong></button></p>
+        </div>
+
+       
+
+        <div class="filterDiv fruits" id="rcorners2">
+          <p class="price"><strong>Wood apple</strong></p>
+          <img src="../catalogue/imgs/portfolio-222.jpg" alt="Denim Jeans" style="width:50%">
+          <p class="price">1 kg</p>
+          <p class="price">LKR 85.00</p>
+          <p><button id="rcorners1"><strong> <a href=# id="rcorners3">More details</a>  </strong> </button></p>
+          <p><button id="rcorners1"><strong><a onclick="addone()" id="rcorners3">Add to Cart</a></strong></button></p>
+        </div>
+
+        <div class="filterDiv cars" id="rcorners2">
+          <p class="price"><strong>Wood apple</strong></p>
+          <img src="../catalogue/imgs/portfolio-77.jpg" alt="Denim Jeans" style="width:50%">
+          <p class="price">1 kg</p>
+          <p class="price">LKR 85.00</p>
+          <p><button id="rcorners1"><strong> <a href=# id="rcorners3">More details</a>  </strong> </button></p>
+          <p><button id="rcorners1"><strong><a onclick="addone()" id="rcorners3">Add to Cart</a></strong></button></p>
+        </div>
+      </div>
+      
+      <script>
+      filterSelection("all")
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+      
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+        }
+      }
+      
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);     
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+      
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+      </script>
+      
+      <script>
+
+        // function togglePopup(){
+      
+        //     document.getElementById("popup-1").classList.toggle("active");
+        // }
+      
+      
+      
+        function addone(){
+          var foo = document.getElementById('thisone').innerHTML;
+          foo++;
+          document.getElementById('thisone').innerHTML = foo;
+        }
+        
+      
+      
+      </script>
+                      
+                       
+                      
+               
+
+                                            
+                                       
+
+
+    <!--====== Javascripts & Jquery ======-->
+	<script src="../New_Header/jshead/jquery-3.2.1.min.js"></script>
+	<script src="../New_Header/jshead/bootstrap.min.js"></script>
+	<script src="../New_Header/jshead/jquery.slicknav.min.js"></script>
+	<script src="../New_Header/jshead/jquery.zoom.min.js"></script>
+	<script src="../New_Header/jshead/main.js"></script>
+</body>
+
+<footer>
+  
+    <main>
+        <footer>
+            <div id="left-footer">
+                <h3>Quick Links</h3>
+                
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#">Computer & Accessories</a></li>
+                        <li><a href="#">Catalog</a></li>
+                        <li><a href="#">Grocery Store</a></li>
+                        <li><a href="#">Fruits & Vegitables</a></li>
+                    </ul>
+               
+        
+                
+            </div>
+        
+            <div id="right-footer">
+                <div class="contact">
+                    <h2>Contact Info:</h2>
+                    <p><i class="fas fa-envelope">&nbsp&nbsp</i>info@onlineamuthukade.com </p>
+                    <p><i class="fas fa-phone-alt">&nbsp&nbsp</i>+9476 8639982</p>
+                    <p><i class="fas fa-map-marker-alt">&nbsp&nbsp</i>School lane,
+                            Walpola,
+                            Ragama.</p>
+                </div>
+            </div>
+            <div class="social">
+                <h3 style="margin-top: 0px;">Chat with Us :
+                    <div id="social-media-footer">
+                        <a href="#">
+                            <i class="fab fa-whatsapp fa-xs"></i>
+                        </a>   
+                    </div>
+                </h3>
+           
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Email.." name="search">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                <br>
+                <a href="#"><i class="fab fa-cc-visa fa-lg"></i>  <i class="fab fa-cc-diners-club fa-lg"></i>  <i class="fab fa-cc-discover fa-lg"></i>  <i class="fab fa-cc-mastercard fa-lg"></i>  <i class="fab fa-cc-amex fa-lg"></i></a>
+                <br></br>
+            </div>
+            <br></br>
+        </footer>
+        </main>
+
+</footer>
+
+</html>
