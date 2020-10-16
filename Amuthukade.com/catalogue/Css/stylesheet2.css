@@ -1,0 +1,265 @@
+
+.page-heading{
+    margin-top: 30px;
+    padding-left: 30px;
+    font-size: 50px;
+}
+
+.container-fluid{
+    margin-top: 2.5rem;
+    padding-left: 50px;
+    margin-left: 50px;
+    margin-right: 5px;
+
+}
+* {
+    box-sizing: border-box;
+  }
+  .col-sm-6{
+    margin-left: 180px;
+    margin-top: 20px;
+  }
+  
+  .blog-card{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+ }
+ .container{
+   margin-top: 10px;
+ }
+ .fa{
+  margin-left: 150px;
+}
+ 
+ .input-group{
+  margin-left: 100px;
+ }
+ .form-group{
+   margin-top: 40px;
+ }
+ .details{
+   font-size: 20px;
+ }
+ .dropbtn {
+  background-color: #007bff;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #007bff;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+.filterDiv {
+  float: left;
+  background-color: #C2DFFF;
+  color: #0a0d0f;
+  width: 250px;
+  height: 350px;
+  line-height: 15px;
+  text-align: center;
+  margin: 12px;
+  display: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: rgb(78, 136, 212);
+  color: white;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: rgb(37, 33, 33);
+  font-size: 22px;
+  margin: 5px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+#rcorners2 {
+  border-radius: 15px; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+}
+#rcorners1 {
+ 
+  background-color: #4ab4df; 
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#rcorners3{
+  font-style: italic;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 600px;
+  background-color: #99ccff;
+  border-radius: 12px;
+ 
+}
+.main-menu1 {
+	list-style: none;
+}
+
+.main-menu1 li {
+	display: inline-block;
+	position: relative;
+}
+
+.main-menu1 li a {
+	display: inline-block;
+	font-size: 16px;
+	color: #ffffff;
+	margin-right: 50px;
+	line-height: 1;
+	padding: 17px 0;
+	position: relative;
+}
+
+.main-menu1 li a .new {
+	position: absolute;
+	top: -8px;
+	font-size: 10px;
+	font-weight: 700;
+	color: #fff;
+	background: #f51167;
+	line-height: 1;
+	text-transform: uppercase;
+	left: calc(50% - 21px);
+	padding: 5px 9px 1px;
+	border-radius: 15px;
+	width: 42px;
+}
+
+.main-menu1 li:hover .sub-menu {
+	visibility: visible;
+	opacity: 1;
+	margin-top: 0;
+}
+
+.main-menu1 li:hover>a {
+	color: #f51167;
+}
+
+.main-menu1 .sub-menu {
+	position: absolute;
+	list-style: none;
+	width: 220px;
+	left: 0;
+	top: 100%;
+	padding: 20px 0;
+	visibility: hidden;
+	opacity: 0;
+	margin-top: 50px;
+	background: #fff;
+	z-index: 99;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+	-webkit-box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.05);
+	box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+.main-menu1 .sub-menu li {
+	display: block;
+}
+
+.main-menu1 .sub-menu li a {
+	display: block;
+	color: #000;
+	margin-right: 0;
+	padding: 8px 20px;
+}
+
+.main-menu1 .sub-menu li a:hover {
+	color: #f51167;
+}
