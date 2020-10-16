@@ -8,14 +8,91 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<<<<<<< HEAD
     <link rel="stylesheet" href="../HomePage/HomePage.css">
-=======
-    <link rel="stylesheet" href="HomePage.css">
->>>>>>> 31f683bdfc0071fee1687f1064e610097c902c15
+   
+    
+    <link rel="stylesheet" href="../Footer/Footer.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="../New_Header/cssh/flaticon.css"/>
+    <link rel="stylesheet" href="../New_Header/cssh/style.css"/>
+
 </head>
 <body>
-
+    
+        <!-- Page Preloder -->
+        <div id="preloder">
+            <div class="loader"></div>
+        </div>
+    
+        <!-- Header section -->
+    <header class="header-section">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 text-center text-lg-left">
+                        <!-- logo -->
+                        <a href="./index.html" class="site-logo">
+                            <img src="../New_Header/himg/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-xl-6 col-lg-5">
+                        <form class="header-search-form">
+                            <input type="text" placeholder="Search here ....">
+                            <button><i class="flaticon-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="user-panel">
+                            <div class="up-item">
+                                <i class="flaticon-profile"></i>
+                                <a href="../LOGIN/login.html">Sign</a> In or <a href="../CREAT_ACCOUNT/create_account.html">Create Account</a>
+                            </div>
+                            <div class="up-item">
+                                <div class="shopping-card">
+                                    <i class="flaticon-bag"></i>
+                                    <span>0</span>
+                                </div>
+                                <a href="#">Shopping Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="main-navbar">
+            <div class="container">
+                <!-- menu -->
+                <ul class="main-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Computer & Accessories</a></li>
+                    <li><a href="#">Catalog</a></li>
+                    <li><a href="#">Grocery Store</a></li>
+                    <li><a href="#">Fruits & Vegitables</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Header section end -->
+    
+    
+    
+    
+    
+    
+    
+    
+        <!--====== Javascripts & Jquery ======-->
+        <script src="jshead/jquery-3.2.1.min.js"></script>
+        <script src="jshead/bootstrap.min.js"></script>
+        <script src="jshead/jquery.slicknav.min.js"></script>
+        <script src="jshead/jquery.zoom.min.js"></script>
+        <script src="jshead/main.js"></script>
+    
+       
     <div id="banner"></div><br></br>
 
     <main>
@@ -88,7 +165,7 @@
     
 </div>
 
-	<a href="#">
+	<a href="../Cart & Featured Products/php/component.php">
             <h2 class="section-heading">Featured Products</h2>
         </a>
 
@@ -149,7 +226,7 @@
 </div>
 
 
-	<a href="#" class="btn-more"> More Products..</a>
+	<a href="../Cart & Featured Products/php/component.php" class="btn-more"> More Products..</a>
 
     <br></br>
 	<div class="slideshow-container">
@@ -180,6 +257,55 @@
       <script src="HomePage.js"></script>
           <br></br>
           <br></br>
+
+
+          <footer>
+            <div id="left-footer">
+                <h3>Quick Links</h3>
+                <p>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#">Computer & Accessories</a></li>
+                        <li><a href="#">Catalog</a></li>
+                        <li><a href="#">Grocery Store</a></li>
+                        <li><a href="#">Fruits & Vegitables</a></li>
+                    </ul>
+                </p>
+        
+                
+            </div>
+        
+            <div id="right-footer">
+                <div class="contact">
+                    <h2>Contact Info:</h2>
+                    <p><i class="fas fa-envelope">&nbsp&nbsp</i>info@onlineamuthukade.com </p>
+                    <p><i class="fas fa-phone-alt">&nbsp&nbsp</i>+9476 8639982</p>
+                    <p><i class="fas fa-map-marker-alt">&nbsp&nbsp</i>School lane,
+                            Walpola,
+                            Ragama.</p>
+                </div>
+            </div>
+            <div class="social">
+                <h3>Chat with Us :
+                    <div id="social-media-footer">
+                        <a href="#">
+                            <i class="fab fa-whatsapp fa-xs"></i>
+                        </a>   
+                    </div>
+                </h3>
+           
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Email.." name="search">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                <br></br>
+                <a href="#"><i class="fab fa-cc-visa fa-lg"></i>  <i class="fab fa-cc-diners-club fa-lg"></i>  <i class="fab fa-cc-discover fa-lg"></i>  <i class="fab fa-cc-mastercard fa-lg"></i>  <i class="fab fa-cc-amex fa-lg"></i></a>
+                <br></br>
+            </div>
+            <br></br>
+        </footer>
          
 </main>
 </body>
